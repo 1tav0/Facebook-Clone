@@ -1,0 +1,28 @@
+.login{ /*to center the column logos in the center of the page but more above */
+    display:grid; 
+    place-items: center;
+    height: 100vh; /*pushes button and div apart */
+}
+
+.login > div > img { /*modify the size of the images will be side by side in row */
+    object-fit: contain;
+    height: 150px;
+}
+
+.login > div{ /*we want them in column so we use flex direction but to use it we first need to display flex */
+    display:flex;
+    flex-direction: column;
+}
+
+.login > button {
+    width: 300px;
+    background-color: #2e81f4;
+    color:#eff2f5;
+    font-weight: 800; /*how thicc the font not how tall*/
+}
+
+.login > button:hover{
+    background-color: white;
+    color:#2e81f4;
+}
+

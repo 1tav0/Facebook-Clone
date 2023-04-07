@@ -1,0 +1,23 @@
+.sidebarRow{
+    display:flex; /*puts icons side to side in row */
+    align-items: center; /*icons and words center side to side */
+    padding: 10px; /*to spread the rows apart from each other */
+    cursor: pointer;
+}
+
+.sidebarRow:hover { /*when we hover over the row it will have shadow*/
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.sidebarRow > h4{
+    margin-left: 20px; /*separates the string from the icon by 20px*/
+    font-weight: 600; /*changes bold of string*/
+}
+
+.sidebarRow > .MuiSvgIcon-root{ /*changes the color of the icon*/
+    font-size: xx-large;
+    color: #2e81f4;
+}
+
+

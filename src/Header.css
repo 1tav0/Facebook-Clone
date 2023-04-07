@@ -1,0 +1,85 @@
+.header{
+
+    display: flex; /*makes every div into a row with its stuff being in columns */
+    padding: 15px 20px; /*from theleft and top edge in */
+    justify-content: space-between;/* spreads the divs apart */
+    /* header sticks to the top all the time  */
+    position: sticky;
+    background-color: white;
+    z-index:100;
+    /* shows line border */
+    top: 0;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+}
+
+.header__left{
+    display: flex; /*postition them into row */
+    justify-content: space-evenly; /*separate them evenly */
+    /* align-items: center; to center the icons evenly side by side */
+}
+.header__input{
+    display: flex; /*postition them into row */
+    align-items: center; /*will center icon in the middle of a box, we will style that box to give the icon a circle like shadow behind it */
+    background-color: #eff2f5;
+    padding: 10px; /*to pad icon from left edge in */
+    margin-left: 1px; /*move whole shadow from left side in a lil bit */
+    border-radius: 999px;  /*to round the corners of the shadow box */
+}
+
+.header__input > input{
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header__left > img{
+    height: 40px;
+}
+
+.header__center{
+    display:flex; /* puts icons in row */
+    flex: 1; /*to move to left edge */ 
+    justify-content: center; /*to center the icons */
+}
+
+.header__option > .MuiSvgIcon-root {
+    color: gray; /*to change the color of the header option icons */
+}
+.header__option--active > .MuiSvgIcon-root{ /*to add the blue bottom part when u click icons in the center */
+    color: #2e81f4
+}
+.header__option--active { /*to add the blue bottom part when u click icons in the center */
+    border-bottom: 4px solid #2e81f4; 
+}
+
+.header__option:hover > .MuiSvgIcon-root { /*if we hover over those icons turn the color to blue */
+    color: #2e81f4;
+}
+
+.header__option{
+    display: flex;
+    align-items: center; /*center the icons in the middle of header space up and down edges*/
+    padding: 0 30px; /*0 padding from top but 30px padding in between*/
+    cursor: pointer; /*change arrow to finger */
+}
+
+.header__option:hover{ /* to give shadow effect in background when we hover over it*/
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom:  none;
+}
+
+.header__info{
+    display: flex; /*to have avatar and name side to side*/
+    align-items: center; /*to center them side by side*/
+}
+
+.header__info > h4 {
+    margin-left: 10px; /*space between the name and avatar*/
+}
+
+.header__right{ /*puts it side by side in row with avatar and name */
+    display: flex;
+}

@@ -1,0 +1,8 @@
+.feed{
+    flex: 1; /*moves it completely to left side, to take as much room as it can  */
+    padding: 30px 150px; /*30px in from top edge down and 150px from left side edge in */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*all this and above to center it at the y axis */
+    align-items: center; /*centers it at the x-axis */
+}

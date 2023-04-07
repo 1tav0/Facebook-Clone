@@ -1,0 +1,63 @@
+.messageSender{
+    display: flex; /*sets components in row */
+    margin-top: 30px; /* move top edge in */
+    flex-direction: column; /*direction of flex now in column aka all children get stacked up*/
+    background-color: white; /*gives the div square a color white to be visible*/
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75); /*gives it the floating card effect */
+    width: 100%; /*from is parent container so the feed above */
+}
+
+.messageSender__top{
+    display: flex;
+    border-bottom: 1px solid #eff2f5;
+    /* padding-bottom: 15px; moves border line down */
+    padding: 15px; /*moves whole component from left and top edge in */
+
+}
+
+.messageSender__top > form { /*take all the room that this can possibly can */
+    flex: 1;
+    display: flex;
+}
+
+.messageSender__top > form > input{  /*to target the input inside the form */
+    outline-width: 0;
+    border: none;
+    padding: 5px 20px; /*modifies the text inside the bubbles */
+    margin: 0 10px; /*moves border box to from left edge in */ 
+    border-radius: 999px;
+    background-color: #eff2f5;
+}
+
+.messageSender__top > form > button{ /*to target the button inside the form*/
+    display: none; /*it doesnt show will do the functionaly of entering the submitted data */
+}
+
+.messageSender__input{ /*takes as much space as possible*/
+    flex: 1;
+}
+
+.messageSender__bottom{
+    display: flex; /*to put components in row */
+    justify-content: space-evenly; /*to separate the components from each other*/
+}
+
+.messageSender__option{
+    padding: 20px; /*move to center of parent component*/
+    display: flex; /*put icon and description in row next to one another */
+    align-items: center; /* centers the icon and description side by side */
+    color: gray; /*color of description is changed */
+    margin: 5px; /*pushes its outer parent a bit out more */
+}
+
+.messageSender__option > h3{
+    font-size: medium;
+    margin-left: 10px;
+    cursor: pointer; /*will become finger only when we hover over the description*/
+}
+
+.messageSender__option:hover{
+    background-color: #eff2f5;
+    border-radius: 20px;
+}

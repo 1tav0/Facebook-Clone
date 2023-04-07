@@ -1,0 +1,29 @@
+.story{
+    position: relative; /*becomes relative to this parent component when we do child component positioning */
+    background-position: center center; /*story picture is centered */
+    background-size: cover; /*size of picture in background aka story */
+    background-repeat: no-repeat; /*no repeat of pictures */
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 5px 17px rgba(0,0,0,0.75); /*gives the box a shadow*/
+    border-radius: 10px;
+    margin-right:10px;
+    transition: transform 100ms ease-in; /*for the transform ease in when we hover over it*/
+    cursor: pointer;
+}
+
+.story:hover{
+    transform: scale(1.07); /*7% scale*/
+}
+
+.story__avatar {
+    margin: 10px; /*separates the stories 10px */
+    border: 5px solid #2e81f4;
+}
+
+.story > h4{
+    position:absolute;
+    bottom:20px;
+    left: 20px; /*move in from left edge */
+    color: white;
+}
