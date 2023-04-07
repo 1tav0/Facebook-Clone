@@ -1,3 +1,5 @@
+# Facebook-Clone
+React + React Hooks, Redux, Material UI, Firestore, FIrebase Hosting, Google Authentication, React flip Move animation
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
